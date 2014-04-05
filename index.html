@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Windows 8 Notification</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<style type="text/css">
+body{
+	margin:0px 0px 0px 0px;
+	background-color: black;
+	color: white;
+}
+#demo-notif{
+	margin-top: 2%;
+	text-align: center;
+}
+#demo-notif button{
+	border: solid 2px white;
+	padding: 40px;
+	min-width: 10%;
+	margin-top: 2%;
+	margin-left: 1%;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 2%;
+	cursor: pointer;
+}
+
+</style>
+<script type="text/javascript">
+	var def="black";
+	function showNotification(color){
+				$( "#notification" ).removeClass(def);
+				$( "#notification" ).addClass(color);
+				def=color;
+				$( "#notification" ).fadeIn( "slow" );
+				//alert('hi');
+				$(".win8-notif-button").click(function(){
+		//alert('hi');
+		$(".notification").fadeOut("slow");
+	});
+	
+	}
+	
+</script>
+</head>
+<body>
+	<div id="demo-notif">
+	<h1>Windows 8.x Style Notifications</h1>
+		<button class="black" onclick="showNotification('black');">Black </button>
+		<button class="green" onclick="showNotification('green');">Green </button>
+		<button class="teal" onclick="showNotification('teal');">Teal </button>
+		<button class="blue" onclick="showNotification('blue');">Blue </button>
+		<button class="purple" onclick="showNotification('purple');">Purple </button>
+		<button class="dark-purple" onclick="showNotification('dark-purple');">Dark Purple </button>
+		<button class="pink" onclick="showNotification('pink');">Pink </button>
+		<button class="red" onclick="showNotification('red');">Red </button>
+		<button class="orange" onclick="showNotification('orange');">Orange </button>
+		<button class="amber" onclick="showNotification('amber');">Amber </button>
+		<button class="yellow" onclick="showNotification('yellow');">Yellow </button>
+		<button class="brown" onclick="showNotification('brown');">Brown </button>
+	</div>
+	<div id="notification" class="notification black">
+		<div class="dark-back">	
+		</div>
+		<div class="win8-notif-body">
+				<div class="mid">
+					<h3>THis is the Notification heading</h3>
+					<p>This is the demo notifification descrption that can be long enough.sjkdfhgsjkldfsgkldfjg
+						sdfgksldfjgkl
+						sdfkgsj;dlfkgj
+						dfjgkd;fklgjs;dfg
+						sdfgjsldkfjg</p>
+					<button class="win8-notif-button">OK</button>
+					<button class="win8-notif-button">CANCEL</button>
+				</div>
+			</div>
+	</div>
+	
+</body>
+</html>
