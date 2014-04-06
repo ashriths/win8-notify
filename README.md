@@ -8,8 +8,8 @@ Live Demo at [Win8-Notify Demonstration Page](http:.//code.ashrith.in/win8-notif
 
 
 <h2>Getting Started</h2>
-			<ol>
-				<li>Get the source code from <a href="https://github.com/ashriths/win8-notify/archive/master.zip">here</a></li>
+<ol>
+	<li>Get the source code from <a href="https://github.com/ashriths/win8-notify/archive/master.zip">here</a></li>
 				<li>Include the CSS File in your page.
 					<blockquote><pre>&lt;link rel="stylesheet" type="text/css" href="css/win8-notify.css"&gt;</pre></blockquote>
 				</li>
