@@ -1,7 +1,10 @@
+.hidden{
+	display : none;
+}
 
 
 .notification{
-	display: none;  /* To initially hide the notification .... can be commented if not required.  */
+	/*display: none;  /* To initially hide the notification .... can be commented if not required.  */
 }
 
 /* To dim the background Elements */
